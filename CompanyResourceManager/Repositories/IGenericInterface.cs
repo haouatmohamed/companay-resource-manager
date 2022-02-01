@@ -6,9 +6,9 @@ using CompanyResourceManager.Models;
 
 namespace CompanyResourceManager.Repositories
 {
-    public interface IGenericInterface
+    public interface IGenericInterface<T>
     {
-        public long AddEmployee(EmployeeDto employeeDto);
+        public long AddEmployee(T employeeDto);
 
         public Employee GetEmployeeById(long id);
 
